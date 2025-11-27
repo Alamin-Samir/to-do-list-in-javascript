@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Todo</title>
+  </head>
+  <body>
+    <!-- input box  -->
+    <div
+      class="border-[1px] border-gray-100 rounded-md shadow-md w-[450px] h-[60px] mx-auto mt-10 flex items-center justify-center gap-2"
+    >
+      <input
+        id="task-name"
+        class="border border-blue-300 py-1 px-3 rounded-md outline-none"
+        type="text"
+        placeholder="Write your task"
+      />
+      <select
+        id="task-option"
+        class="border border-blue-300 py-1 px-3 rounded-md outline-none"
+      >
+        <option value="complete">Complete</option>
+        <option value="pending">Pending</option>
+      </select>
+      <button
+        id="add-btn"
+        class="py-1 px-5 rounded-md outline-none bg-green-500 text-white cursor-pointer"
+      >
+        Add
+      </button>
+    </div>
+
+    <!-- output box -->
+    <div
+      id="todo-container"
+      class="w-[450px] mx-auto border border-blue-500 rounded-lg mt-10 p-4"
+    ></div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+
+    <script src="to-do.js"></script>
+  </body>
+</html>
